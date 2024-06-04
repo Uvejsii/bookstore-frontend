@@ -190,7 +190,7 @@ const deleteBook = async (bookId) => {
     </div>
     <hr>
     <h1 class="text-center">Available Books</h1>
-    <div class="row row-cols-1 row-cols-md-3 g-4 my-4">
+    <div class="row row-cols-1 row-cols-xl-3 row-cols-lg-3 row-cols-md-2 g-4 my-4">
       <div class="col" v-if="books.length > 0" v-for="book in books" :key="book.id">
         <div class="card">
           <img

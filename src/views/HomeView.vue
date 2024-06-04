@@ -31,7 +31,7 @@ const filteredBooks = computed(() => {
       <button class="btn btn-primary" @click="goToAdminView">Go To Admin View</button>
       <input type="text" placeholder="Search..." v-model="searchInput">
     </div>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-xl-3 row-cols-lg-3 row-cols-md-2 g-4">
       <div class="col" v-if="filteredBooks.length > 0" v-for="book in filteredBooks" :key="book.id">
         <div class="card">
           <img
